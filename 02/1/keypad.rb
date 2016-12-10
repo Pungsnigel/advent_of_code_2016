@@ -25,7 +25,6 @@ class Keypad
   end
 
   def act(action)
-    puts TRANSFORM_RULES[@active_number]
     @active_number = TRANSFORM_RULES[@active_number][action]
   end
 end
